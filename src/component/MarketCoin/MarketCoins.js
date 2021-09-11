@@ -1,16 +1,34 @@
 import React,{useContext} from 'react';
-import {ThemeContext} from '../../context/ThemePr';
-import Coin from '../CoineMarket';
+
+import Coin from '../CoineMarket/CoineMarket';
 import {Link} from 'react-router-dom'
 import '../Scss/Coine.scss'
 
 
-const Index = () => {
-    const value = useContext(ThemeContext);
 
-    console.log('home coine',value.COINE);
+const Show =({cat,filteredCoins,fav}) => { 
+          
+        switch (cat) {
+            case 'spot':
+                 return(filteredCoins.map((coin,i) =><div key={i}><Coin coin={coin} switech={cat}/></div> ) )
+             case 'Fav':
+                 return(fav.map((coin,i) =><div key={i}><Coin coin={coin} switech={cat}/></div> ) )}
+
+            }
+
+const MarketCoins = ({switechC,filteredCoins,fav}) => {
+    
+
+     
+  
+
+
+
+
     return (
         <section>
+        <h1> helo {switechC}</h1>
+
         <div className='coin-bar-container' >
                 <div className='coin-rowone '>
                         <ul className ='coin-bar'>
@@ -25,22 +43,10 @@ const Index = () => {
           </div>
   </div>
        
-  {value.COINE.map(coin => {
-    return (
-      
-        
-     
-        <div  > 
-              
-                 <Coin  coin={coin}/>
-              
-          </div>
-      
-    );
-  })}
+      <Show cat={switechC} filteredCoins={filteredCoins} fav={fav}/>
 
         </section>
     );
 }
 
-export default Index;
+export default MarketCoins;

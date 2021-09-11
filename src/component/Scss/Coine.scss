@@ -13,13 +13,14 @@ ul {
 	align-items: center;
 	height: 80px;
 	border-top: 2px solid #eee9e9;
-	width: 90%;
+	
 	padding-top: 26PX;
 	
 	&:hover {
 		background: #d7d7d7;
 		text-decoration: none;
-		width: 90%;
+		
+		
 		flex-direction: row;
 		
 		align-items: center;
@@ -137,7 +138,7 @@ ul {
 .coin-bar{
 
 	display: flex;
-	margin-left: 80%;
+	margin-left: 70%;
 	text-align:left;
 
 	
@@ -188,7 +189,7 @@ ul {
 
 
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
 	.star.sticky {
 		
 		width: 100%;
@@ -218,15 +219,9 @@ ul {
 		width: 100%;
 		
 		&:hover {
-			background: #d7d7d7;
-			
-			width: 120%;
-			flex-direction: row;
-			align-items: center;
-			height: 85px;
-			border-bottom: 1px solid #d7d7d7;
-			border-radius: 10px;
-
+			background:none;
+			border-top: 1px solid #d7d7d7;
+			border: orangered;
 
 		}
 		
@@ -263,6 +258,8 @@ ul {
 		}
         .coine-name{
             width: 90PX;
+			margin-top: 7px;
+			
         }
 		
     }
@@ -293,11 +290,11 @@ ul {
 	}
 	.coin-percent {
 		
-        margin-left: -55PX;
-        
-        width: 100%;
+
+		margin-top: -8PX;
+
 		position: absolute;
-		text-align: right;
+		right: 10PX;
 	  
 		
 	}

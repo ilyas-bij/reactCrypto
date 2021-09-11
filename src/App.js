@@ -1,11 +1,11 @@
 
 import {BrowserRouter,Route} from 'react-router-dom'
-import CoineDetail from './pages/Detail'
-import Market from './pages/Market'
-import Home from './pages/Home'
-import About from './pages/About'
+import CoineDetail from './pages/Detail/Detail'
+import Market from './pages/Market/Market'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
 import ThemePr from './context/ThemePr';
-import Nav from './component/Nav'
+import Nav from './component/Nav/index'
 
 function App() {
   return (

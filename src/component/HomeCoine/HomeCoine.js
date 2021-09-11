@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
 import {ThemeContext} from '../../context/ThemePr';
-import Coin from '../Coine';
+import Coin from '../Coine/Coine';
 import {Link} from 'react-router-dom'
 import '../Scss/Coine.scss'
 
@@ -8,7 +8,7 @@ import '../Scss/Coine.scss'
 const Index = () => {
     const value = useContext(ThemeContext);
 
-    console.log('home coine',value.COINE);
+  //  console.log('home coine',value.COINE);
     return (
         <section>
         <div className='coin-bar-container' >

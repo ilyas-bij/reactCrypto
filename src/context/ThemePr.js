@@ -11,6 +11,18 @@ const ThemePr = ( {children}) => {
     const [coins, setCoins] = useState([]);
     const [Fav, setFav] = useState([]);
     
+    const AddToFav = params => {
+      
+        let filteredPerson = Fav.filter(item => item.id !== params.id);
+          setFav([...filteredPerson, params])
+        
+      }
+      const Remove = params => {
+        setFav(Fav.filter(item => item.id !== params.id))
+    }
+
+
+
          useEffect(() => {
                 axios
                     .get(
@@ -18,7 +30,7 @@ const ThemePr = ( {children}) => {
                     )
                     .then(res => {
                     setCoins(res.data);
-                    console.log(res.data);
+                  //  console.log(res.data);
                     })
                     .catch(error => console.log(error));
     }, []);
@@ -26,7 +38,9 @@ const ThemePr = ( {children}) => {
 
          return (
                 <ThemeContext.Provider  value={{ 
-                    COINE:coins  }}>
+                    COINE:coins ,Fav,
+                    AddToFav,Remove
+                     }}>
                     {children}
                 </ThemeContext.Provider>
             )

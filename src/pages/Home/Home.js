@@ -1,6 +1,6 @@
 import React ,{useState,useEffect}from 'react'
 import {Link} from 'react-router-dom'
-import Coine from '../../component/HomeCoine';
+import Coine from '../../component/HomeCoine/HomeCoine';
 
 import '../Scss/Home.scss';
 

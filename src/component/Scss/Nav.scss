@@ -127,7 +127,7 @@ header.sticky {
 	}
 }
 @media (max-width: 500px) {
-	header {
+	header ,header.sticky {
 		padding: 10px 20px;
 		.navegation {
 			display: none;
@@ -142,24 +142,22 @@ header.sticky {
 		}
 		.navegation.active {
 			width: 100%;
-			height: calc(100%-100px);
 			position: fixed;
-			top: 65px;
+		    top: 58PX;
 			padding: 60px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
 			background: #FFF;
+		
 			li {
 				height: 55px;
 				border: #111;
 			}
 		}
 	}
-	header.sticky {
-		padding: 10px 20px;
-	}
+	
 	.menu {
 		
 		position: relative;
