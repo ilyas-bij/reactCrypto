@@ -15,9 +15,8 @@ p {
 }
 .banner {
 	width: 100%;
-	min-height: 80vh;
 	position: relative;
-	min-height: 80vh;
+	min-height: 60vh;
 	display: flex;
 	align-items: center;
 	background: url(../../img/bg.jpg);
@@ -73,7 +72,7 @@ p {
 	.banner {
 		position: relative;
 		width: 100%;
-		min-height: 62vh;
+		min-height: 50vh;
 		display: flex;
 		align-items: center;
 		background: url(../../img/bg.jpg);
@@ -93,4 +92,7 @@ p {
 		}
 	}
 	
+}
+.swip{
+	padding: 0;
 }

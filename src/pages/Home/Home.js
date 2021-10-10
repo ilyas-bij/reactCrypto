@@ -1,6 +1,7 @@
 import React ,{useState,useEffect}from 'react'
 import {Link} from 'react-router-dom'
 import Coine from '../../component/HomeCoine/HomeCoine';
+import Swiper from '../../component/CardItems/Item';
 
 import '../Scss/Home.scss';
 
@@ -21,7 +22,10 @@ function index() {
                     <Link to='/' className='btn1'>sing up</Link>
                 </div>
             </section>
-                    <Coine/>
+            <section className='swip' id='swip'>
+                <Swiper/>
+            </section>
+             <Coine/>
         </div>
 
    
