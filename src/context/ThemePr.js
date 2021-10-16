@@ -10,6 +10,8 @@ const ThemePr = ( {children}) => {
     const [coins, setCoins] = useState([]);
     const [Fav, setFav] = useState([]);
     const [articles, setarticles] = useState([]);
+    const [Items, setItems] = useState();
+    const [Item, setItem] = useState('test');
     
     const AddToFav = params => {
       
@@ -20,6 +22,12 @@ const ThemePr = ( {children}) => {
       const Remove = params => {
         setFav(Fav.filter(item => item.id !== params.id))
     }
+
+    const AddItem = params =>{
+        setItem(params)
+    }
+
+
 
 
 
@@ -36,7 +44,7 @@ const ThemePr = ( {children}) => {
 
                     axios
                     .get(
-                    'https://newsapi.org/v2/everything?q=crypto&from=2021-09-15&sortBy=publishedAt&apiKey=f59984ac386345af9070eff868983df9&page=5'
+                    'https://newsapi.org/v2/everything?q=crypto&from=2021-09-16&sortBy=publishedAt&apiKey=f59984ac386345af9070eff868983df9'
                     )
                     .then(res => {
                     var data = res.data.articles;
@@ -47,15 +55,29 @@ const ThemePr = ( {children}) => {
                     
                     })
                     .catch(error => console.log(error));
+
+
+                    var x = articles.map(i=>{
+                        return (
+                            {
+                                title:i.title,
+                                description:i.description,
+                                urlToImage:i.urlToImage
+                            }
+                            
+                            )
+                    })
+                    setItems(x)
+                    console.log('tzst',x);
                             
     }, []);
-   
+   console.log("Item",Item);
    
 
          return (
                 <ThemeContext.Provider  value={{ 
-                    COINE:coins ,Fav,Articles:articles,
-                    AddToFav,Remove
+                    COINE:coins ,Fav,Articles:articles,Item,
+                    AddToFav,Remove,AddItem
                      }}>
                     {children}
                 </ThemeContext.Provider>

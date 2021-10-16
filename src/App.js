@@ -6,6 +6,7 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import ThemePr from './context/ThemePr';
 import Nav from './component/Nav/index'
+import ArDetail from './pages/Detail/ArtDetail';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route  path="/Market/:cat" component={Market}/>
               <Route  path="/About" component={About}/>
               <Route path="/Detail/:id" component={CoineDetail}/>
+              <Route path="/ArDetail/:titel" component={ArDetail}/>
           </BrowserRouter>   
     </ThemePr>
   );
