@@ -1,16 +1,15 @@
-import React ,{useState,useEffect}from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
 import Coine from '../../component/HomeCoine/HomeCoine';
-import Swiper from '../../component/CardItems/Item';
+import Swiper from '../../component/CardItems/SwiperItem';
 
 import '../Scss/Home.scss';
 
 
 
+function Index() {
 
 
-
-function index() {
    
     return (
         
@@ -32,4 +31,4 @@ function index() {
     )
 }
 
-export default index
+export default Index
