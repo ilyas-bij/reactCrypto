@@ -28,6 +28,9 @@ const ThemePr = ( {children}) => {
     }
 
 
+    var today = new Date(),
+    date = today.getFullYear() + '-' + (today.getMonth() ) + '-' + today.getDate();
+    console.log('date',date);
 
 
 
@@ -44,7 +47,7 @@ const ThemePr = ( {children}) => {
 
                     axios
                     .get(
-                    'https://newsapi.org/v2/everything?q=crypto&from=2021-09-16&sortBy=publishedAt&apiKey=f59984ac386345af9070eff868983df9'
+                    `https://newsapi.org/v2/everything?q=crypto&from=${date}&sortBy=publishedAt&apiKey=f59984ac386345af9070eff868983df9`
                     )
                     .then(res => {
                     var data = res.data.articles;
