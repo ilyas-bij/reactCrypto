@@ -1,0 +1,18 @@
+.con{
+    width: 100%;
+    display: flex;
+    .blogeD{
+        width: 80%;
+        background-color: lawngreen;
+        padding: 20px;
+        text-align: center;
+        h1{
+            font-size: 36px;
+        }
+    }
+    .Ads{
+        width: 20%;
+        background-color: lightcoral;
+    }
+
+}
