@@ -1,24 +1,23 @@
 import React,{useContext,useState} from 'react';
-import {useParams} from 'react-router-dom'
+
 import '../Scss/ArtDetail.scss'
 import {ThemeContext} from '../../context/ThemePr'
+import { useHistory } from "react-router-dom";
+
 const Artdetail = () => {
-
-    
-    
-
     const value = useContext(ThemeContext);
     const [Ditem, setDitem] = useState(value.Item);
+    let history = useHistory();
 
-   
-  
-    return (
+    
+if (Ditem ) {
+        return (
         <div>
               <div style={{height:"70PX",backgroundColor:'#000'}}></div>
 
               <div className='con'>
                     <div className='blogeD'>
-                        <h1>{value.Item.title}</h1>
+                        <h1>{Ditem.title}</h1>
                             
                     </div>
                     <div className='Ads'>
@@ -31,6 +30,14 @@ const Artdetail = () => {
             
         </div>
     );
+    
+}else{
+     history.push('/');
+     window.location.reload(false);
+    
+}
+  
+    
 }
 
 export default Artdetail;

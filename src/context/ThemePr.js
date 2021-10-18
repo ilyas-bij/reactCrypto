@@ -11,7 +11,7 @@ const ThemePr = ( {children}) => {
     const [Fav, setFav] = useState([]);
     const [articles, setarticles] = useState([]);
     const [Items, setItems] = useState();
-    const [Item, setItem] = useState('test');
+    const [Item, setItem] = useState();
     
     const AddToFav = params => {
       
