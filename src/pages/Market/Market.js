@@ -7,7 +7,7 @@ import {ThemeContext} from '../../context/ThemePr'
 import '../Scss/Market.scss'
 import Coine from '../../component/MarketCoin/MarketCoins';
 
-
+import Swiper from '../../component/CardItems/SwiperItem';
 
 
 
@@ -33,6 +33,10 @@ function Index() {
     return (
         <div>
              <div style={{height:"70PX",backgroundColor:'#000'}}></div>
+
+             <section className='swip' id='swip'>
+                <Swiper/>
+            </section>
             
             
                 <div className='bar'>

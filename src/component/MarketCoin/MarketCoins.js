@@ -27,7 +27,7 @@ const MarketCoins = ({switechC,filteredCoins,fav}) => {
 
     return (
         <section>
-        <h1> helo {switechC}</h1>
+        
 
         <div className='coin-bar-container' >
                 <div className='coin-rowone '>

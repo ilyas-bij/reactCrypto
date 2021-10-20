@@ -27,6 +27,7 @@ function CoineDetail() {
         
         <div>
         <div style={{height:"70PX",backgroundColor:'#000'}}></div>
+        
             <h1 >{coin.id}</h1>
         </div>
     )

@@ -19,7 +19,7 @@ const Item = ({item}) => {
                     <h1>{item.title}</h1>
                     <p>{item.description}</p>
                     
-                    <Link to={`/ArDetail/${'item'}`} onClick={()=>{value.AddItem(item)}} style={{textDecoration:'none',color:'#000'}}  >
+                    <Link to={`/ArDetail/${'toHome'}`} onClick={()=>{value.AddItem(item)}} style={{textDecoration:'none',color:'#000'}}  >
                     <button> Read More</button>
                     </Link>
                     

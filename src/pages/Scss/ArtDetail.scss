@@ -1,18 +1,91 @@
 .con{
     width: 100%;
+    
     display: flex;
     .blogeD{
         width: 80%;
-        background-color: lawngreen;
+        height: 100%;
+        background-color: #202329b3;
+
         padding: 20px;
-        text-align: center;
         h1{
+            padding: 25px;
+            font-size: 46px;
+            color: #f1f1f1;
+        }
+        img{
+            width: 100%;
+            height: 55%;
+        }
+        p{
+
+            padding: 35px;
+            text-align: center;
+            font-size: 28px;
+            color: #f1f1f1;
+        }
+        @media screen and (max-width: 991px) {
+           width: 100%;
+           padding: 10px;
+           h1{
+            padding: 25px;
             font-size: 36px;
+            color: #f1f1f1;
+        }
+           p{
+
+            padding: 15px;
+
+            font-size: 24px;
+            color: #f1f1f1;
+        }
         }
     }
     .Ads{
         width: 20%;
-        background-color: lightcoral;
+        background-color:#f1f1f1;
+     
+        
+
+        .NavCard{
+            background-color: #DDD;
+            padding: 8%;
+            border-radius: 20px;
+            margin: 5px;
+            &:hover {
+                background-color: #f1f1f1;
+                 border: 1px solid #000;
+
+              }
+
+            h3{
+                margin: 0px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			line-height: 20px;    
+			max-height: 75px;     
+			-webkit-line-clamp: 2; 
+			-webkit-box-orient: vertical;
+            }
+            p{
+                margin-top: 10px;
+                	
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			line-height: 16px;    
+			max-height: 32px;     
+			-webkit-line-clamp: 4; /* Write the number of 
+									  lines you want to be 
+									  displayed */
+			-webkit-box-orient: vertical;
+            }
+        }
+        @media screen and (max-width: 991px) {
+            display: none;
+     
+         }
     }
 
 }

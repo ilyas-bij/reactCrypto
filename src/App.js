@@ -19,7 +19,7 @@ function App() {
               <Route  path="/Market/:cat" component={Market}/>
               <Route  path="/About" component={About}/>
               <Route path="/Detail/:id" component={CoineDetail}/>
-              <Route path="/ArDetail/:titel" component={ArDetail}/>
+              <Route path="/ArDetail/:TT" component={ArDetail}/>
           </BrowserRouter>   
     </ThemePr>
   );
