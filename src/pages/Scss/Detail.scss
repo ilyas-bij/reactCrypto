@@ -1,0 +1,37 @@
+.TopAria{
+    padding: 10px;
+    display: flex;
+    @media screen and (max-width: 991px) {
+      display: inline;
+      padding: 5px;
+    }
+}
+
+.cards{
+    width: 350px;
+	height: 150px;
+	border-radius: 15px;
+	padding: 1.5rem;
+	background: #f1f1f1;
+	position: relative;
+	
+	
+	transition: 0.4s ease-out;
+    margin-left: 22PX;
+	box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    @media screen and (max-width: 991px) {
+        width: 212px;
+	height: 130px;
+    padding: 1rem;
+    margin-left: 12PX;
+    margin-top: 10Px;
+    }
+    h2{
+        padding: 10px;
+        
+    }
+    p{
+        padding: 5px;
+        margin-left: 5px;
+    }
+}
