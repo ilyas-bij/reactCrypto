@@ -5,13 +5,13 @@
     .blogeD{
         width: 80%;
         height: 100%;
-        background-color: #202329b3;
+        background-color: #f1f1f1;
 
         padding: 20px;
         h1{
             padding: 25px;
             font-size: 46px;
-            color: #f1f1f1;
+            color: #000;
         }
         img{
             width: 100%;
@@ -22,7 +22,7 @@
             padding: 35px;
             text-align: center;
             font-size: 28px;
-            color: #f1f1f1;
+            color: #000;
         }
         @media screen and (max-width: 991px) {
            width: 100%;
@@ -30,14 +30,13 @@
            h1{
             padding: 25px;
             font-size: 36px;
-            color: #f1f1f1;
+         
         }
            p{
 
             padding: 15px;
 
             font-size: 24px;
-            color: #f1f1f1;
         }
         }
     }
