@@ -28,10 +28,34 @@
     }
     h2{
         padding: 10px;
-        
+        @media screen and (max-width: 991px) {
+            padding: 5px;
+        }
     }
     p{
         padding: 5px;
         margin-left: 5px;
+        @media screen and (max-width: 991px) {
+            padding: 2px;
+            margin-left: 0;
+        }
     }
+    .coin-percent {
+        margin-left: -12px;
+        padding-top: 10px;
+       
+        @media screen and (max-width: 991px) {
+            position: relative;
+        margin-top: 3px;
+         }
+    }
+    div{
+        display: flex;
+        @media screen and (max-width: 991px) {
+           display: block;
+        }
+    }
+}
+.coinDesc{
+    padding:  5%;
 }
