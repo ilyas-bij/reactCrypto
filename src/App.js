@@ -6,6 +6,7 @@ import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import ThemePr from './context/ThemePr';
 import Nav from './component/Nav/index'
+import Footer from './component/Footer/Footer';
 import ArDetail from './pages/Detail/ArtDetail';
 
 function App() {
@@ -13,13 +14,14 @@ function App() {
     <ThemePr>
       
           <BrowserRouter>
-          <Nav/>
-              <Route exact path="/" component={Home}/>
-              <Route exact path="/Market" component={Market}/>
-              <Route  path="/Market/:cat" component={Market}/>
-              <Route  path="/About" component={About}/>
-              <Route path="/Detail/:id" component={CoineDetail}/>
-              <Route path="/ArDetail/:TT" component={ArDetail}/>
+              <Nav/>
+                  <Route exact path="/" component={Home}/>
+                  <Route exact path="/Market" component={Market}/>
+                  <Route  path="/Market/:cat" component={Market}/>
+                  <Route  path="/About" component={About}/>
+                  <Route path="/Detail/:id" component={CoineDetail}/>
+                  <Route path="/ArDetail/:TT" component={ArDetail}/>
+              <Footer/>
           </BrowserRouter>   
     </ThemePr>
   );
