@@ -1,11 +1,33 @@
 .TopAria{
     padding: 10px;
     display: flex;
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 768px) {
       display: inline;
       padding: 5px;
+      .botumCard,.TopCard{
+        display: flex;
+        padding: 1% 3% 3% 1%;
+
     }
+  
+    }
+    .botumCard,.TopCard{
+        display: flex;
+    }
+    @media screen and (max-width: 1400px) {
+        padding: 10px;
+        display: block;
+        
+        .botumCard,.TopCard{
+            display: flex;
+            justify-content: center;
+            padding-top: 2%;
+        }
+    }
+
+    
 }
+
 
 .cards{
     width: 350px;
@@ -26,6 +48,10 @@
     margin-left: 12PX;
     margin-top: 10Px;
     }
+    @media screen and (max-width: 1400px) {
+        width: 443px;
+        height: 150px;
+    }
     h2{
         padding: 10px;
         @media screen and (max-width: 991px) {
@@ -35,9 +61,11 @@
     p{
         padding: 5px;
         margin-left: 5px;
+        font-size: 20px;
         @media screen and (max-width: 991px) {
             padding: 2px;
             margin-left: 0;
+            font-size: 16px;
         }
     }
     .coin-percent {
@@ -57,5 +85,11 @@
     }
 }
 .coinDesc{
-    padding:  5%;
+    padding:  3%;
+}
+
+
+.chart{
+    height: 500px;
+    background-color: aqua;
 }

@@ -10,18 +10,20 @@ import Footer from './component/Footer/Footer';
 import ArDetail from './pages/Detail/ArtDetail';
 
 function App() {
+  
   return (
     <ThemePr>
       
           <BrowserRouter>
               <Nav/>
+             
                   <Route exact path="/" component={Home}/>
                   <Route exact path="/Market" component={Market}/>
                   <Route  path="/Market/:cat" component={Market}/>
                   <Route  path="/About" component={About}/>
                   <Route path="/Detail/:id" component={CoineDetail}/>
                   <Route path="/ArDetail/:TT" component={ArDetail}/>
-              <Footer/>
+              
           </BrowserRouter>   
     </ThemePr>
   );

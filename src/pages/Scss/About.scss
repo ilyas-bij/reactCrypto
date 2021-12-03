@@ -2,16 +2,25 @@
         width: 80%;
         height: 100%;
         text-align: center;
-        margin: 5% 5% 5% 10%;
+        margin: 9% 5% 14% 10%;
+        @media screen and (max-width: 1400px) {
+            margin: 14% 5% 23% 10%;
+        }
+        @media screen and (max-width: 768px) {
+            margin: 33% 5% 23% 10%;
+        }
+
 	//box-shadow: 20PX 20PX 30PX 20PX rgba(0,0,0,0.05);
 	p {
-		padding: 5% 5% 5% 5%;
+		padding: 7%;
 		font-size: 22PX;
 	    box-shadow: 20PX 20PX 30PX 20PX rgba(0,0,0,0.10);
-    @media screen and (max-width: 991px) {
-        font-size: 19PX;
-        margin-top: 20%;
+   
+        @media screen and (max-width: 768px) {
+            margin: 15% -2% 23% 0%;
+            font-size: 19PX;
 
-    }
+        }
 	}
+   
 }

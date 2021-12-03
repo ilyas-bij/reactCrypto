@@ -45,7 +45,7 @@ Link {
 }
 @media (max-width: 767px) {
 	.bar {
-		padding-left: 8%;
+		padding-left: 2%;
 
 		height: 100PX;
 		width: 100%;
@@ -53,7 +53,7 @@ Link {
 		align-items: center;
 		.btnSP {
 			margin-left: 2pX;
-            width: 170PX;
+            width: 147PX;
             text-align: center;
             
 		}
@@ -62,11 +62,12 @@ Link {
 			border-radius: 5PX;
 			width: 370Px;
 			padding: 10px 30px;
-			margin-left: 10px;
+			
 			margin-top: 20px;
 		}
         .btns{
             margin-left: 8pX;
+			
         }
 	}
 }

@@ -47,17 +47,18 @@ function CoineDetail() {
              <div>
                <h1 >{coin.id.toUpperCase()}</h1>
             <section className='TopAria'>
-              <div style={{display:'flex'}}> 
-              <div className='cards'> 
-                <p>{coin.id} Price ({coin &&coin.symbol.toUpperCase()})</p>
-                <h2>${Mcap.current_price && Mcap.current_price.usd.toLocaleString()}</h2>
-                <div>
-                   <p>Low:$ <span>{Mcap.low_24h&& Mcap.low_24h.usd.toLocaleString()}</span></p>
-                   
-                    <p>High:$ <span>{Mcap.high_24h && Mcap.high_24h.usd.toLocaleString()}</span></p>
-                    
-                </div>
-                </div>
+              <div className='TopCard'> 
+              <div className='cards'>
+                <h2>Volume 24h</h2>
+                  <p>$ {Mcap &&Mcap.total_volume.usd.toLocaleString()}</p>
+                  <ul>
+                  {per && per < 0 ? (
+                            <li className='coin-percent red'>{per && per.toFixed(2)}%</li>
+                        ) : (
+                            <li className='coin-percent green'>{per && per.toFixed(2)}%</li>
+                        )} 
+                  </ul>
+                 </div>
                 <div className='cards'>
                   <h2>Market Cap</h2>
                   <p>$ {Mcap &&Mcap.market_cap.usd.toLocaleString()}</p>
@@ -72,22 +73,37 @@ function CoineDetail() {
 
              
               </div>
-              <div style={{display:'flex'}}> 
-                <div className='cards'>
-                <h2>Volume 24h</h2>
-                  <p>$ {Mcap &&Mcap.total_volume.usd.toLocaleString()}</p>
-                  <ul>
-                  {per && per < 0 ? (
-                            <li className='coin-percent red'>{per && per.toFixed(2)}%</li>
-                        ) : (
-                            <li className='coin-percent green'>{per && per.toFixed(2)}%</li>
-                        )} 
-                  </ul>
-                 </div>
-                <div className='cards'> </div>
+              <div className='botumCard'> 
+
+              <div className='cards'> 
+                <p style={{fontSize:'19px'}}>{coin.id} Price ({coin &&coin.symbol.toUpperCase()}) </p>
+                <h2 >${Mcap.current_price && Mcap.current_price.usd.toLocaleString()}</h2>
+                <div>
+                   <p style={{fontSize:'19px'}}>Low:$ <span>{Mcap.low_24h&& Mcap.low_24h.usd.toLocaleString()}</span></p>
+                   
+                    <p style={{fontSize:'19px'}}>High:$ <span>{Mcap.high_24h && Mcap.high_24h.usd.toLocaleString()}</span></p>
+                    
+                </div>
+                </div>
+               
+                <div className='cards' style={{display:'none'}}> </div>
               </div>
            
             </section>
+
+
+
+
+                <section className='chart'>
+
+                </section>
+
+
+
+
+
+
+
 
             <section className='coinDesc'>
               <h2>{coin && coin.symbol.toUpperCase()} Price Live Data</h2>

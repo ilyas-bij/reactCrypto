@@ -23,7 +23,7 @@ function NavBar() {
                     <li> <Link to='/'  className='Link'>Home </Link></li>
                     <li> <Link to='/Market/spot' className='Link' >Market </Link></li>
                     <li> <Link to='/About' className='Link' > About</Link></li>
-                    <li> <Link to='/Login' className='Link' > Login</Link></li>
+                    
                 </ul>
          </div>
      </header>
