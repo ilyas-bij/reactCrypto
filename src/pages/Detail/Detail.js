@@ -4,6 +4,7 @@ import {useParams} from 'react-router-dom'
 
 import axios from 'axios';
 import '../Scss/Detail.scss'
+import Chartjs from '../../component/chart/chart'
 
 function CoineDetail() {
   
@@ -92,22 +93,15 @@ function CoineDetail() {
             </section>
 
 
-
-
                 <section className='chart'>
-
+                          <Chartjs/>
                 </section>
-
-
-
-
-
 
 
 
             <section className='coinDesc'>
               <h2>{coin && coin.symbol.toUpperCase()} Price Live Data</h2>
-              <p>{Desc}</p>
+              <p>{Desc ? Desc :' no description available ' }</p>
               
             </section>
              </div>
