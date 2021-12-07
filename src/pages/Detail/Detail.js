@@ -45,7 +45,7 @@ function CoineDetail() {
         if (coin.length !== 0) {
             return(
              <div>
-               <h1 >{coin.id.toUpperCase()}</h1>
+               
             <section className='TopAria'>
               <div className='TopCard'> 
               <div className='cards'>
